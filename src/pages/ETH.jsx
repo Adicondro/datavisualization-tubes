@@ -9,6 +9,7 @@ import EthGasFeeBubble from "../components/EthGasFeeBubble";
 import CombinedParticle from "../components/CombinedParticle";
 import NftTopChart from "../components/NftTopChart";
 import NftBarChart from "../components/NftBarChart";
+import Footer from "@/components/Footer";
 
 const ETH = () => {
   const [ethData, setEthData] = useState([]);
@@ -169,20 +170,22 @@ const ETH = () => {
           untuk menjadikan karya mereka sebagai token dan menjangkau audiens
           global. Dari koleksi seni digital eksklusif hingga aset dalam game,
           Ethereum menciptakan model ekonomi baru yang menghubungkan kreator dan
-          kolektor secara langsung. Dengan miliaran dolar mengalir melalui
-          ekosistem NFT-nya, Ethereum telah menjadi fenomena budaya,
-          memberdayakan kreator untuk berinovasi dan investor untuk memiliki
-          bagian dari masa depan. Baik itu Bored Apes atau seni generatif, dunia
-          NFT sangat bergantung pada infrastruktur Ethereum yang tak tertandingi
-          dan komunitasnya yang dinamis.
+          kolektor secara langsung.
         </p>
         <div className="flex flex-wrap justify-center items-center mt-8 mb-8">
           <NftTopChart data={nftData} />
         </div>
+        <p className="text-xl mt-6 mb-6 leading-relaxed">Dengan miliaran dolar mengalir melalui
+          ekosistem NFT-nya, Ethereum telah menjadi fenomena budaya,
+          memberdayakan kreator untuk berinovasi dan investor untuk memiliki
+          bagian dari masa depan. Baik itu Bored Apes atau seni generatif, dunia
+          NFT sangat bergantung pada infrastruktur Ethereum yang tak tertandingi
+          dan komunitasnya yang dinamis.</p>
         <div className="flex flex-wrap justify-center items-center mt-8 mb-8">
           <NftBarChart data={nftData} /> 
         </div>
       </div>
+      <Footer />
     </>
   );
 };

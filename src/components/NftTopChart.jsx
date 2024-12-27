@@ -114,9 +114,12 @@ const NftTopChart = ({ data }) => {
   }, [data]);
 
   return (
+    <>
     <Card className="p-4 w-full">
       <svg ref={svgRef} className="w-full"></svg>
     </Card>
+    <h2 className="text-grey-500 text-center mb-4">Top 3 NFT With the Biggest Volume</h2>
+    </>
   );
 };
 

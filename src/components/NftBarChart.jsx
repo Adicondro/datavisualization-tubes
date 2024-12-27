@@ -124,9 +124,13 @@ const NftBarChart = ({ data }) => {
   }, [data]);
 
   return (
+    <>
     <Card className="p-4 w-full overflow-x-auto">
       <svg ref={svgRef}></svg>
     </Card>
+    <h2 className="text-grey-500 text-center mb-4">NFT Chart</h2>
+    </>
+    
   );
 };
 
